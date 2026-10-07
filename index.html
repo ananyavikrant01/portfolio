@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Home | Your Name</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@400;600;800&family=Space+Mono:wght@400;700&family=Silkscreen:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body data-page="index.html">
+    <div class="site">
+      
+      <header class="hero">
+        
+        
+        <div class="hand" style="font-size: 1.1rem">my name is</div>
+        <div class="namebox">
+          <h1>
+            ANANYA
+            <br />
+            VIKRANT
+          </h1>
+        </div>
+        <br />
+        
+        <span class="status">Open to new work and good problems</span>
+        <span
+          class="sticker hand"
+          style="
+            position: static;
+            background: var(--mint);
+            font-size: 0.9rem;
+            text-transform: none;
+            display: inline-block;
+            margin: 0 6px;
+          "
+        >
+          Bengaluru, IN
+        </span>
+        <div
+          class="tagline"
+          id="type"
+          data-text="Building intelligent systems and designing thoughtful digital experiences.🌸"
+        >
+          <span></span>
+        </div>
+        <a class="btn" href="contact.html">
+          <i></i>
+          Contact me
+        </a>
+      </header>
+      <!-- About preview: polaroids, intro text, skill tags -->
+      <div class="arc"></div>
+      <div class="hand" style="padding: 0 40px">about me!</div>
+      <section class="about">
+        <div class="polaroid" style="left: -170px; top: 60px; transform: rotate(-3deg)">
+          <div><img src="myphoto.jpeg" alt="Ananya Vikrant"></div>
+          
+        </div>
+        
+        <span class="label">what's up</span>
+        <p>
+          I'm an engineer focused on machine learning, with a love for web development and data
+          structures &amp; algorithms. Design is my side quest: I like making what I build look
+          and feel good too!!
+        </p>
+        <div class="tags">
+          <span class="tag" style="background: var(--yellow); color: var(--ink)">
+            Machine Learning
+          </span>
+          <span class="tag" style="background: var(--green)">Web Development</span>
+          <span class="tag" style="background: var(--pink)">DSA</span>
+          <span class="tag" style="background: var(--blue)">Side-quest Design</span>
+        </div>
+      </section>
+      <section class="page" style="padding-bottom: 50px">
+        <span class="label">my files</span>
+        <div
+          class="desk"
+          style="
+            display: flex;
+            justify-content: center;
+            gap: clamp(20px, 6vw, 70px);
+            flex-wrap: wrap;
+          "
+        >
+          <button class="fold" data-open="w-bio">
+            <svg viewBox="0 0 64 54" width="68" height="58">
+              <path
+                d="M4 8h22l6 7h28v34H4z"
+                fill="#f7e27a"
+                stroke="#161616"
+                stroke-width="3"
+                stroke-linejoin="round"
+              />
+              <rect
+                x="14"
+                y="26"
+                width="22"
+                height="7"
+                fill="#7aa2d6"
+                stroke="#161616"
+                stroke-width="2"
+              />
+            </svg>
+            <span>bio-data</span>
+          </button>
+          <button class="fold" data-open="w-proj">
+            <svg viewBox="0 0 64 54" width="68" height="58">
+              <path
+                d="M4 8h22l6 7h28v34H4z"
+                fill="#f7e27a"
+                stroke="#161616"
+                stroke-width="3"
+                stroke-linejoin="round"
+              />
+              <rect
+                x="14"
+                y="26"
+                width="22"
+                height="7"
+                fill="#7aa2d6"
+                stroke="#161616"
+                stroke-width="2"
+              />
+            </svg>
+            <span>projects</span>
+          </button>
+          <button class="fold" data-open="w-res">
+            <svg viewBox="0 0 64 54" width="68" height="58">
+              <path
+                d="M4 8h22l6 7h28v34H4z"
+                fill="#f7e27a"
+                stroke="#161616"
+                stroke-width="3"
+                stroke-linejoin="round"
+              />
+              <rect
+                x="14"
+                y="26"
+                width="22"
+                height="7"
+                fill="#7aa2d6"
+                stroke="#161616"
+                stroke-width="2"
+              />
+            </svg>
+            <span>resume</span>
+          </button>
+        </div>
+        
+      </section>
+      <!-- Folder windows (opened by script.js) -->
+      <div class="win" id="w-bio" role="dialog" aria-label="bio-data" hidden>
+        <div class="wbar">
+          <span>C:\\ANANYA\\bio-data</span>
+          <button class="x" aria-label="Close">✕</button>
+        </div>
+        <div class="wbody">
+          <table>
+            <tr>
+              <td>Full name</td>
+              <td>Ananya Vikrant</td>
+            </tr>
+            <tr>
+              <td>Date of birth</td>
+              <td>04 June 2006</td>
+            </tr>
+            <tr>
+              <td>Nationality</td>
+              <td>Indian</td>
+            </tr>
+            <tr>
+              <td>Languages</td>
+              <td>English, Kannada, Hindi, French</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>Bengaluru, Karnataka</td>
+            </tr>
+            <tr>
+              <td>Interests</td>
+              <td>ML, competitive coding, UI design</td>
+            </tr>
+          </table>
+          <p><a href="about.html">open full page ↗</a></p>
+        </div>
+      </div>
+      <div class="win" id="w-proj" role="dialog" aria-label="projects" hidden>
+        <div class="wbar">
+          <span>C:\\ANANYA\\projects</span>
+          <button class="x" aria-label="Close">✕</button>
+        </div>
+        <div class="wbody">
+          <div class="job">
+            <b>🧠 Sentiment Lens</b>
+            NLP model that explains its review scores. Python, PyTorch, Flask.
+          </div>
+          <div class="job">
+            <b>🌳 AlgoViz</b>
+            Visualizer for sorting, graph and tree algorithms. JavaScript.
+          </div>
+          <div class="job">
+            <b>🎨 Pixel Palette</b>
+            Side project: colour-palette generator, designed in Figma.
+          </div>
+          <p><a href="case-study.html">open full page ↗</a></p>
+        </div>
+      </div>
+      <div class="win" id="w-res" role="dialog" aria-label="resume" hidden>
+        <div class="wbar">
+          <span>C:\\ANANYA\\resume</span>
+          <button class="x" aria-label="Close">✕</button>
+        </div>
+        <div class="wbody">
+          <div class="job">
+            <b>B.E. Computer Science</b>
+            R V Institute of Technology and Management, Bengaluru
+            <small>2022 – 2028</small>
+          </div>
+          <div class="job">
+            <b>ML Intern</b>
+            S M Air
+            <small>Jun – Aug 2025</small>
+          </div>
+          Python &amp; ML
+          <div class="bar"><i data-w="90%"></i></div>
+          DSA
+          <div class="bar"><i data-w="85%"></i></div>
+          Web Development
+          <div class="bar"><i data-w="75%"></i></div>
+          <p><a href="ananya_resume.html">open full page ↗</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact | Ananya Vikrant</title>
+
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@400;600;800&family=Space+Mono:wght@400;700&family=Silkscreen:wght@400;700&display=swap"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+
+        .contact-page {
+            padding: 36px 40px 70px;
+        }
+
+        .contact-page h2 {
+            font: 700 2.2rem 'Space Mono', monospace;
+            margin: 0 0 12px;
+        }
+
+        .contact-intro {
+            max-width: 650px;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin: 0 0 30px;
+        }
+
+        .contact-links {
+            max-width: 720px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+
+            padding: 17px 20px;
+
+            background: #fff;
+            border: 2px solid var(--ink);
+
+            color: var(--ink);
+            text-decoration: none;
+
+            transition:
+                transform .15s ease,
+                box-shadow .15s ease;
+        }
+
+        .contact-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 5px 5px 0 var(--ink);
+        }
+
+        .contact-icon {
+            width: 46px;
+            height: 46px;
+
+            flex-shrink: 0;
+
+            display: grid;
+            place-items: center;
+
+            border: 2px solid var(--ink);
+            border-radius: 50%;
+
+            background: var(--yellow);
+
+            font: 700 .8rem 'Space Mono', monospace;
+        }
+
+        .contact-icon.email {
+            background: var(--yellow);
+        }
+
+        .contact-icon.phone {
+            background: var(--mint);
+        }
+
+        .contact-icon.linkedin {
+            background: var(--pink);
+        }
+
+        .contact-icon.github {
+            background: var(--green);
+        }
+
+        .contact-icon.fiverr {
+            background: var(--sand);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .contact-type {
+            font: 700 .62rem 'Space Mono', monospace;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        .contact-value {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .contact-arrow {
+            margin-left: auto;
+            font-size: 1.4rem;
+        }
+
+        .availability {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+
+            margin-top: 35px;
+
+            font: 700 .65rem 'Space Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+        }
+
+        .availability-dot {
+            width: 9px;
+            height: 9px;
+
+            border-radius: 50%;
+
+            background: var(--green);
+
+            box-shadow: 0 0 0 3px #1fa46322;
+        }
+
+        .contact-note {
+            margin-top: 45px;
+            max-width: 650px;
+
+            font: 600 1.25rem/1.4 'Caveat', cursive;
+        }
+
+        @media (max-width: 760px) {
+
+            .contact-page {
+                padding: 30px 20px 60px;
+            }
+
+            .contact-page h2 {
+                font-size: 1.8rem;
+            }
+
+            .contact-value {
+                font-size: .9rem;
+            }
+
+            .contact-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+
+<body data-page="contact.html">
+
+    <div class="site">
+
+        <!-- CONTACT CONTENT -->
+        <section class="contact-page">
+
+            <span class="label">contact</span>
+
+            <h2>Hey there!</h2>
+
+            <p class="contact-intro">
+                Always open to interesting projects, collaborations, internships, and opportunities
+            </p>
+
+
+            <div class="contact-links">
+
+
+                <!-- EMAIL -->
+                <a
+                    href="mailto:ananyavikrant01@gmail.com"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon email">
+                        ✉
+                    </div>
+
+                    <div class="contact-info">
+
+                        <span class="contact-type">
+                            Email
+                        </span>
+
+                        <span class="contact-value">
+                            ananyavikrant01@gmail.com
+                        </span>
+
+                    </div>
+
+                    <span class="contact-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <!-- PHONE -->
+                <a
+                    href="tel:+91 8431000460"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon phone">
+                        ☎
+                    </div>
+
+                    <div class="contact-info">
+
+                        <span class="contact-type">
+                            Phone
+                        </span>
+
+                        <span class="contact-value">
+                            +91 8431000460
+                        </span>
+
+                    </div>
+
+                    <span class="contact-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <!-- LINKEDIN -->
+                <a
+                    href="linkedin.com/in/ananya-vikrant"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon linkedin">
+                        in
+                    </div>
+
+                    <div class="contact-info">
+
+                        <span class="contact-type">
+                            LinkedIn
+                        </span>
+
+                        <span class="contact-value">
+                            Ananya Vikrant
+                        </span>
+
+                    </div>
+
+                    <span class="contact-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <!-- GITHUB -->
+                <a
+                    href="https://github.com/ananyavikrant01"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon github">
+                        GH
+                    </div>
+
+                    <div class="contact-info">
+
+                        <span class="contact-type">
+                            GitHub
+                        </span>
+
+                        <span class="contact-value">
+                            @ananyavikrant01
+                        </span>
+
+                    </div>
+
+                    <span class="contact-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <!-- FIVERR -->
+                <a
+                    href="fiverr.com/ananyavikrant"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon fiverr">
+                        F
+                    </div>
+
+                    <div class="contact-info">
+
+                        <span class="contact-type">
+                            Fiverr
+                        </span>
+
+                        <span class="contact-value">
+                            My Fiverr Profile
+                        </span>
+
+                    </div>
+
+                    <span class="contact-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
